@@ -12,11 +12,11 @@ public class Solution
     public int EliminateMaximum(int[] distance, int[] speed)
     {
         int totalNumberOfMonsters = distance.Length;
-        initializeArray_numberOfMonstersToReachTheCityAtTimePoint(distance, speed);
-        return findMaxNumberOfEliminatedMonsters(totalNumberOfMonsters);
+        InitializeArray_numberOfMonstersToReachTheCityAtTimePoint(distance, speed);
+        return FindMaxNumberOfEliminatedMonsters(totalNumberOfMonsters);
     }
 
-    private void initializeArray_numberOfMonstersToReachTheCityAtTimePoint(int[] distance, int[] speed)
+    private void InitializeArray_numberOfMonstersToReachTheCityAtTimePoint(int[] distance, int[] speed)
     {
         for (int i = 0; i < distance.Length; ++i)
         {
@@ -24,7 +24,7 @@ public class Solution
         }
     }
 
-    private int findMaxNumberOfEliminatedMonsters(int totalNumberOfMonsters)
+    private int FindMaxNumberOfEliminatedMonsters(int totalNumberOfMonsters)
     {
         int eliminatedMonsters = 1;
 
